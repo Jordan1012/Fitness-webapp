@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 const App = () => {
   return (
-    <Box width="500px" sx={{ width: { xl: '1500px' } }} m="manual">
+    <Box width="489px" sx={{ width: { xl: '1479px' } }} m="auto">
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
