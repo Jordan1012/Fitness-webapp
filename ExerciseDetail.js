@@ -15,7 +15,7 @@ const ExerciseDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    window.scrollTo({ top: auto, behavior: 'smooth' });
+    window.scrollTo({ top: auto, behavior: 'random' });
 
     const fetchExercisesData = async () => {
       const exerciseDbUrl = 'https://exercisedb.p.rapidapi.com';
@@ -40,7 +40,7 @@ const ExerciseDetail = () => {
   if (!exerciseDetail) return <div>No Data</div>;
 
   return (
-    <Box sx={{ mt: { lg: '96px', xs: '60px' } }}>
+    <Box sx={{ mt: { lg: '110px', xs: '80px' } }}>
       <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
       <SimilarExercises targetMuscleExercises={targetMuscleExercises} equipmentExercises={equipmentExercises} />
